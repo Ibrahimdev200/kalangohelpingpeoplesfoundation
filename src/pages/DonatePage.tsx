@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Heart, Shield, CreditCard, Building, Check } from "lucide-react";
+import { Heart, Shield, CreditCard, Building, Check, MessageCircle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import PageHero from "@/components/shared/PageHero";
@@ -16,12 +16,26 @@ const donationUses = [
   "Emergency relief during crises",
 ];
 
-const bankDetails = {
-  bankName: "First Bank of Nigeria",
-  accountName: "Kalango Helping People's Foundation",
-  accountNumber: "0000000000",
-  sortCode: "011151003",
-};
+const bankAccounts = [
+  {
+    currency: "Euro (EUR)",
+    accountNumber: "0895862694",
+    bankName: "GTB Bank",
+    accountName: "Kalango Links Nigeria Limited",
+  },
+  {
+    currency: "Pound Sterling (GBP)",
+    accountNumber: "0895862687",
+    bankName: "GTB Bank",
+    accountName: "Kalango Links Nigeria Limited",
+  },
+  {
+    currency: "U.S. Dollar (USD)",
+    accountNumber: "0895862670",
+    bankName: "GTB Bank",
+    accountName: "Kalango Links Nigeria Limited",
+  },
+];
 
 const DonatePage = () => {
   return (
@@ -125,39 +139,76 @@ const DonatePage = () => {
       {/* Bank Transfer */}
       <section className="section-padding bg-card">
         <div className="container-custom">
-          <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-8">
-              <Building className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">
-                Bank Transfer Details
-              </h2>
-              <p className="text-muted-foreground">
-                Prefer to donate via bank transfer? Use the account details below.
-              </p>
-            </div>
+          <div className="text-center mb-8">
+            <Building className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">
+              Direct Bank Transfer
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Prefer to donate via bank transfer? We accept donations in multiple currencies. 
+              Choose the account that works best for you.
+            </p>
+          </div>
 
-            <div className="bg-muted rounded-xl p-8">
-              <div className="space-y-4">
-                <div className="flex justify-between items-center py-3 border-b border-border">
-                  <span className="text-muted-foreground">Bank Name</span>
-                  <span className="font-semibold">{bankDetails.bankName}</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-border">
-                  <span className="text-muted-foreground">Account Name</span>
-                  <span className="font-semibold">{bankDetails.accountName}</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-border">
-                  <span className="text-muted-foreground">Account Number</span>
-                  <span className="font-semibold font-mono text-lg">{bankDetails.accountNumber}</span>
-                </div>
-                <div className="flex justify-between items-center py-3">
-                  <span className="text-muted-foreground">Sort Code</span>
-                  <span className="font-semibold">{bankDetails.sortCode}</span>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
+            {bankAccounts.map((account) => (
+              <div key={account.currency} className="bg-muted rounded-xl p-6 text-center">
+                <span className="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                  {account.currency}
+                </span>
+                <div className="space-y-3">
+                  <div>
+                    <p className="text-muted-foreground text-xs uppercase tracking-wide">Account Name</p>
+                    <p className="font-semibold text-sm">{account.accountName}</p>
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground text-xs uppercase tracking-wide">Account Number</p>
+                    <p className="font-mono text-xl font-bold text-primary">{account.accountNumber}</p>
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground text-xs uppercase tracking-wide">Bank</p>
+                    <p className="font-semibold">{account.bankName}</p>
+                  </div>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground mt-6 text-center">
-                Please send us a message after your transfer so we can acknowledge your donation.
-              </p>
+            ))}
+          </div>
+
+          <p className="text-sm text-muted-foreground text-center max-w-xl mx-auto">
+            Please send us a message after your transfer so we can acknowledge your donation and send you a receipt.
+          </p>
+        </div>
+      </section>
+
+      {/* Contact for Donations */}
+      <section className="section-padding bg-muted">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">
+              Need Help with Your Donation?
+            </h2>
+            <p className="text-muted-foreground mb-8">
+              Reach out to us directly for assistance or to confirm your donation.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://wa.me/16143778612"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-6 py-4 rounded-xl font-semibold hover:bg-[#25D366]/90 transition-colors"
+              >
+                <MessageCircle className="h-5 w-5" />
+                Chat on WhatsApp
+                <span className="text-sm font-normal opacity-90">+1 (614) 377-8612</span>
+              </a>
+              <a
+                href="tel:+2347070351737"
+                className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-6 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-colors"
+              >
+                <Phone className="h-5 w-5" />
+                Call Us
+                <span className="text-sm font-normal opacity-90">+234 707 035 1737</span>
+              </a>
             </div>
           </div>
         </div>

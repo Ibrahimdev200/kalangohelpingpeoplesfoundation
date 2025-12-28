@@ -20,8 +20,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone Number",
-    details: ["+234 000 000 0000"],
-    link: "tel:+234000000000",
+    details: ["+1 (614) 377-8612", "+234 707 035 1737"],
   },
   {
     icon: Mail,

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Heart, Mail, Phone, MapPin, Facebook, Instagram } from "lucide-react";
+import { Heart, Mail, Phone, MapPin, Facebook, Instagram, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
 
 const Footer = () => {
@@ -21,8 +21,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-background/80 text-sm leading-relaxed">
-              Empowering communities, supporting the less privileged, and building hope for a brighter future. Together,
-              we can make a difference.
+              Empowering communities, supporting the less privileged, and building 
+              hope for a brighter future. Together, we can make a difference.
             </p>
             <div className="flex gap-4">
               <a
@@ -58,7 +58,10 @@ const Footer = () => {
                 { name: "Contact Us", path: "/contact" },
               ].map((link) => (
                 <li key={link.path}>
-                  <Link to={link.path} className="text-background/80 hover:text-accent transition-colors text-sm">
+                  <Link
+                    to={link.path}
+                    className="text-background/80 hover:text-accent transition-colors text-sm"
+                  >
                     {link.name}
                   </Link>
                 </li>
@@ -72,20 +75,25 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                <span className="text-background/80 text-sm">Nembe, Bayelsa State, Nigeria</span>
+                <span className="text-background/80 text-sm">
+                  Nembe, Bayelsa State, Nigeria
+                </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent shrink-0" />
                 <a href="tel:+2347070351737" className="text-background/80 hover:text-accent text-sm">
-                  +2347070351737
+                  +234 707 035 1737
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <MessageCircle className="h-5 w-5 text-accent shrink-0" />
+                <a href="https://wa.me/16143778612" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-accent text-sm">
+                  WhatsApp: +1 (614) 377-8612
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent shrink-0" />
-                <a
-                  href="mailto:info@kalangohelpingpeoplesfoundation.com"
-                  className="text-background/80 hover:text-accent text-sm"
-                >
+                <a href="mailto:info@kalangofoundation.org" className="text-background/80 hover:text-accent text-sm">
                   info@kalangofoundation.org
                 </a>
               </li>
@@ -96,7 +104,8 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold text-lg mb-4">Support Our Mission</h4>
             <p className="text-background/80 text-sm mb-4">
-              Your donation helps us continue our work in empowering communities and supporting those in need.
+              Your donation helps us continue our work in empowering 
+              communities and supporting those in need.
             </p>
             <Link
               to="/donate"

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-foreground text-background">
       <div className="container-custom section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
           {/* About */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -91,10 +91,10 @@ const Footer = () => {
                   WhatsApp: +1 (614) 377-8612
                 </a>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-accent shrink-0" />
-                <a href="mailto:info@kalangofoundation.org" className="text-background/80 hover:text-accent text-sm">
-                  info@kalangofoundation.org
+              <li className="flex items-start gap-3">
+                <Mail className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                <a href="mailto:info@kalangohelpingpeoplesfoundation.com" className="text-background/80 hover:text-accent text-sm break-all">
+                  info@kalangohelpingpeoplesfoundation.com
                 </a>
               </li>
             </ul>

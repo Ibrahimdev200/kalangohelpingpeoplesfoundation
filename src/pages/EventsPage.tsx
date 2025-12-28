@@ -194,16 +194,24 @@ const EventsPage = () => {
             subtitle="Watch our impact stories and program highlights."
           />
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="aspect-video bg-card rounded-xl overflow-hidden shadow-sm flex items-center justify-center">
-              <p className="text-muted-foreground text-center p-8">
-                Video coming soon.<br />
-                <span className="text-sm">Add your YouTube video embed here</span>
-              </p>
+            <div className="bg-card rounded-xl overflow-hidden shadow-sm">
+              <video
+                controls
+                className="w-full aspect-video object-cover"
+                poster={program5}
+              >
+                <source src="/videos/toilet-renovation.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="p-4">
+                <h3 className="font-display font-bold">Community Toilet Renovation</h3>
+                <p className="text-muted-foreground text-sm">Improving sanitation facilities for the Nembe community.</p>
+              </div>
             </div>
             <div className="aspect-video bg-card rounded-xl overflow-hidden shadow-sm flex items-center justify-center">
               <p className="text-muted-foreground text-center p-8">
-                Video coming soon.<br />
-                <span className="text-sm">Add your YouTube video embed here</span>
+                More videos coming soon.<br />
+                <span className="text-sm">YouTube videos can be embedded here</span>
               </p>
             </div>
           </div>

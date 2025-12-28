@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Heart, Mail, Phone, MapPin, Facebook, Instagram } from "lucide-react";
+import { Heart, Mail, Phone, MapPin, Facebook, Instagram, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
 
 const Footer = () => {
@@ -81,8 +81,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent shrink-0" />
-                <a href="tel:+234000000000" className="text-background/80 hover:text-accent text-sm">
-                  +234 000 000 0000
+                <a href="tel:+2347070351737" className="text-background/80 hover:text-accent text-sm">
+                  +234 707 035 1737
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <MessageCircle className="h-5 w-5 text-accent shrink-0" />
+                <a href="https://wa.me/16143778612" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-accent text-sm">
+                  WhatsApp: +1 (614) 377-8612
                 </a>
               </li>
               <li className="flex items-center gap-3">

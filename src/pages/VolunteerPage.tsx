@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 import Layout from "@/components/layout/Layout";
 import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
@@ -54,28 +55,24 @@ const VolunteerPage = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const { data, error } = await supabase.functions.invoke('submit-form', {
+        body: {
+          formType: 'volunteer',
+          formData: {
+            subject: "New Volunteer Application - Kalango Foundation",
+            from_name: formData.name,
+            ...formData,
+          },
         },
-        body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // Replace with actual key
-          subject: "New Volunteer Application - Kalango Foundation",
-          from_name: formData.name,
-          ...formData,
-        }),
       });
 
-      if (response.ok) {
-        toast({
-          title: "Application Submitted!",
-          description: "Thank you for your interest in volunteering. We'll be in touch soon!",
-        });
-        setFormData({ name: "", email: "", phone: "", interest: "", message: "" });
-      } else {
-        throw new Error("Submission failed");
-      }
+      if (error) throw error;
+
+      toast({
+        title: "Application Submitted!",
+        description: "Thank you for your interest in volunteering. We'll be in touch soon!",
+      });
+      setFormData({ name: "", email: "", phone: "", interest: "", message: "" });
     } catch (error) {
       toast({
         title: "Submission Error",

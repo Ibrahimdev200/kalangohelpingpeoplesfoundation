@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 import Layout from "@/components/layout/Layout";
 import PageHero from "@/components/shared/PageHero";
 
@@ -54,28 +55,24 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const { data, error } = await supabase.functions.invoke('submit-form', {
+        body: {
+          formType: 'contact',
+          formData: {
+            subject: `Contact Form: ${formData.subject}`,
+            from_name: formData.name,
+            ...formData,
+          },
         },
-        body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // Replace with actual key
-          subject: `Contact Form: ${formData.subject}`,
-          from_name: formData.name,
-          ...formData,
-        }),
       });
 
-      if (response.ok) {
-        toast({
-          title: "Message Sent!",
-          description: "Thank you for reaching out. We'll respond as soon as possible.",
-        });
-        setFormData({ name: "", email: "", subject: "", message: "" });
-      } else {
-        throw new Error("Submission failed");
-      }
+      if (error) throw error;
+
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for reaching out. We'll respond as soon as possible.",
+      });
+      setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       toast({
         title: "Submission Error",

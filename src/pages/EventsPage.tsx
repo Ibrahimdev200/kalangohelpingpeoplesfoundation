@@ -13,6 +13,13 @@ import program5 from "@/assets/program-5.jpg";
 import program6 from "@/assets/program-6.jpg";
 import program7 from "@/assets/program-7.jpg";
 import program8 from "@/assets/program-8.jpg";
+import gallery9 from "@/assets/gallery-9.jpg";
+import gallery10 from "@/assets/gallery-10.jpg";
+import gallery11 from "@/assets/gallery-11.jpg";
+import gallery12 from "@/assets/gallery-12.jpg";
+import gallery13 from "@/assets/gallery-13.jpg";
+import gallery14 from "@/assets/gallery-14.jpg";
+import gallery15 from "@/assets/gallery-15.jpg";
 
 const pastEvents = [
   {
@@ -69,6 +76,13 @@ const galleryImages = [
   { src: program6, alt: "Women empowerment" },
   { src: program7, alt: "Team activities" },
   { src: program8, alt: "Cultural celebration" },
+  { src: gallery9, alt: "Christmas party foundation members at Unity Bridge" },
+  { src: gallery10, alt: "Community leaders at event" },
+  { src: gallery11, alt: "Supporting elderly community members" },
+  { src: gallery12, alt: "Children's community gathering" },
+  { src: gallery13, alt: "Foundation volunteers with children" },
+  { src: gallery14, alt: "Wheelchair donation for disabled child" },
+  { src: gallery15, alt: "Mobility equipment distribution" },
 ];
 
 const EventsPage = () => {
@@ -193,7 +207,7 @@ const EventsPage = () => {
             title="Video Gallery"
             subtitle="Watch our impact stories and program highlights."
           />
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
             <div className="bg-card rounded-xl overflow-hidden shadow-sm">
               <video
                 controls
@@ -208,11 +222,47 @@ const EventsPage = () => {
                 <p className="text-muted-foreground text-sm">Improving sanitation facilities for the Nembe community.</p>
               </div>
             </div>
-            <div className="aspect-video bg-card rounded-xl overflow-hidden shadow-sm flex items-center justify-center">
-              <p className="text-muted-foreground text-center p-8">
-                More videos coming soon.<br />
-                <span className="text-sm">YouTube videos can be embedded here</span>
-              </p>
+            <div className="bg-card rounded-xl overflow-hidden shadow-sm">
+              <video
+                controls
+                className="w-full aspect-video object-cover"
+                poster={gallery9}
+              >
+                <source src="/videos/community-event-1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="p-4">
+                <h3 className="font-display font-bold">Christmas Children's Party 2025</h3>
+                <p className="text-muted-foreground text-sm">Celebrating with children at Unity Bridge, Nembe.</p>
+              </div>
+            </div>
+            <div className="bg-card rounded-xl overflow-hidden shadow-sm">
+              <video
+                controls
+                className="w-full aspect-video object-cover"
+                poster={gallery12}
+              >
+                <source src="/videos/community-event-2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="p-4">
+                <h3 className="font-display font-bold">Community Outreach Highlights</h3>
+                <p className="text-muted-foreground text-sm">Moments from our community support programs.</p>
+              </div>
+            </div>
+            <div className="bg-card rounded-xl overflow-hidden shadow-sm">
+              <video
+                controls
+                className="w-full aspect-video object-cover"
+                poster={gallery13}
+              >
+                <source src="/videos/community-event-3.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="p-4">
+                <h3 className="font-display font-bold">Foundation Activities</h3>
+                <p className="text-muted-foreground text-sm">Our volunteers making a difference in the community.</p>
+              </div>
             </div>
           </div>
         </div>

@@ -93,19 +93,20 @@ const HomePage = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <span className="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider">Our Mission</span>
+              <span className="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider">22 Years of Service</span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold mt-2 mb-4 sm:mb-6">
-                Transforming Lives Through Compassion and Action
+                A Legacy of Personal Sacrifice Since 2002
               </h2>
               <p className="text-muted-foreground text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed">
-                At Kalango Helping People's Foundation, we believe that every person deserves access to 
-                basic necessities, education, and opportunities for growth. Founded with a vision to 
-                serve the Nembe people and vulnerable communities across Nigeria, we work tirelessly 
-                to bridge the gap between need and support.
+                For over <strong className="text-foreground">22 years</strong>, Kalango Helping People's Foundation 
+                has been <strong className="text-foreground">personally funded by our founder</strong>—serving 
+                the Nembe people and vulnerable communities with unwavering dedication. Every food package, 
+                every scholarship, every act of support has come from personal sacrifice.
               </p>
               <p className="text-muted-foreground text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
-                Through our welfare programs, educational initiatives, and community outreach efforts, 
-                we've touched thousands of lives—and with your support, we can reach even more.
+                Now, we are calling on <strong className="text-foreground">indigenes of Bayelsa State, 
+                the Nembe community, and all compassionate hearts</strong> to join this mission. Your support 
+                will help us expand to more communities and sustain this vital work.
               </p>
               <Link to="/about">
                 <Button variant="outline" className="gap-2 w-full sm:w-auto">

@@ -46,15 +46,47 @@ const DonatePage = () => {
         backgroundImage={program5}
       />
 
+      {/* Founder's Story - Compelling Appeal */}
+      <section className="section-padding bg-primary text-primary-foreground">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto text-center">
+            <Heart className="h-12 w-12 sm:h-16 sm:w-16 mx-auto mb-4 sm:mb-6 text-accent animate-pulse" />
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold mb-4 sm:mb-6">
+              22 Years of Personal Sacrifice — Now We Need You
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-4 sm:mb-6 leading-relaxed">
+              Since <strong>2002</strong>, this foundation has been <strong>funded entirely from the personal 
+              resources of our founder</strong>. For over two decades, one person's unwavering commitment 
+              has kept this mission alive—feeding families, educating children, and bringing hope to communities 
+              across Nembe and beyond.
+            </p>
+            <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-4 sm:mb-6 leading-relaxed">
+              But personal funds alone can only go so far. To reach more communities, to help more people, 
+              and to sustain this vital work, <strong>we now need the support of generous hearts like yours</strong>.
+            </p>
+            <p className="text-base sm:text-lg md:text-xl text-primary-foreground mb-6 sm:mb-8 leading-relaxed font-semibold">
+              We are calling on all <strong className="text-accent">sons and daughters of Bayelsa State</strong>, 
+              the <strong className="text-accent">Nembe people</strong>, and compassionate individuals everywhere 
+              to join us in this mission. Your donation will help us expand to more communities and ensure 
+              this foundation continues serving for generations to come.
+            </p>
+            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 px-4 sm:px-6 py-2 sm:py-3 rounded-full">
+              <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
+              <span className="text-sm sm:text-base font-semibold">100% of donations go directly to community programs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Donate */}
       <section className="section-padding bg-card">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">Your Impact</span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold mt-2 mb-6">
+          <div className="max-w-4xl mx-auto text-center mb-8 sm:mb-12">
+            <span className="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider">Your Impact</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold mt-2 mb-4 sm:mb-6">
               How Your Donation Helps
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-base sm:text-lg">
               When you donate to Kalango Helping People's Foundation, you're directly supporting 
               programs that change lives. Here's where your generosity goes:
             </p>

@@ -43,38 +43,39 @@ const AboutPage = () => {
       {/* Our Story */}
       <section className="section-padding bg-card">
         <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
-              <span className="text-primary font-semibold text-sm uppercase tracking-wider">Our Story</span>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mt-2 mb-6">
-                A Foundation Built on Love and Service
+              <span className="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider">Our Story</span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold mt-2 mb-4 sm:mb-6">
+                22 Years of Personal Sacrifice and Dedication
               </h2>
-              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Kalango Helping People's Foundation was born from a deep desire to make a meaningful 
-                difference in the lives of the less privileged. Founded by individuals who witnessed 
-                firsthand the struggles faced by communities in Nembe and across Nigeria, we set out 
-                to create an organization that would address these challenges head-on.
+              <p className="text-muted-foreground text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed">
+                <strong className="text-foreground">Since 2002</strong>, Kalango Helping People's Foundation has been 
+                serving the less privileged in Nembe and beyond. For over two decades, this foundation has been 
+                <strong className="text-foreground"> funded entirely from the personal resources</strong> of our 
+                founder and CEO—a remarkable testament to unwavering commitment and sacrifice.
               </p>
-              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                What started as a small community initiative has grown into a trusted foundation 
-                reaching thousands of lives through welfare programs, educational support, and 
-                humanitarian outreach. Our commitment to the Nembe people and vulnerable communities 
-                remains at the heart of everything we do.
+              <p className="text-muted-foreground text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed">
+                What started as one person's vision to help their community has grown into a trusted 
+                foundation touching thousands of lives through welfare programs, educational support, 
+                and humanitarian outreach. Every naira spent, every life touched, has been made possible 
+                through personal dedication and faith in the mission.
               </p>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                Today, we continue to expand our reach and deepen our impact, always guided by our 
-                core values of compassion, integrity, and empowerment.
+              <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
+                Now, we are calling on <strong className="text-foreground">sons and daughters of Bayelsa State, 
+                the Nembe people, and all compassionate individuals</strong> to join us. With your support, 
+                we can extend our reach to more communities and sustain this vital work for generations to come.
               </p>
             </div>
             <div className="relative">
               <img
                 src={program2}
                 alt="Our team in action"
-                className="rounded-xl w-full h-[500px] object-cover shadow-xl"
+                className="rounded-xl w-full h-64 sm:h-80 lg:h-[500px] object-cover shadow-xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-xl shadow-lg">
-                <p className="text-4xl font-display font-bold">10+</p>
-                <p className="text-sm">Years of Service</p>
+              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-primary text-primary-foreground p-4 sm:p-6 rounded-xl shadow-lg">
+                <p className="text-2xl sm:text-4xl font-display font-bold">22+</p>
+                <p className="text-xs sm:text-sm">Years of Service</p>
               </div>
             </div>
           </div>

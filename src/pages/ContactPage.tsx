@@ -93,7 +93,7 @@ const ContactPage = () => {
 
       <section className="section-padding bg-card">
         <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
             {/* Contact Information */}
             <div>
               <span className="text-primary font-semibold text-sm uppercase tracking-wider">Get in Touch</span>
@@ -156,7 +156,7 @@ const ContactPage = () => {
 
             {/* Contact Form */}
             <div>
-              <div className="bg-muted p-8 rounded-xl">
+              <div className="bg-muted p-4 sm:p-6 md:p-8 rounded-xl">
                 <h3 className="text-2xl font-display font-bold mb-6">Send Us a Message</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>

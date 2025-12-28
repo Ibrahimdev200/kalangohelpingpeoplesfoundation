@@ -7,7 +7,7 @@ interface PageHeroProps {
 const PageHero = ({ title, subtitle, backgroundImage }: PageHeroProps) => {
   return (
     <section
-      className="relative py-24 md:py-32 px-4"
+      className="relative py-16 sm:py-20 md:py-28 lg:py-32 px-4"
       style={{
         backgroundImage: backgroundImage
           ? `linear-gradient(to bottom, hsl(var(--hero-overlay) / 0.85), hsl(var(--hero-overlay) / 0.9)), url(${backgroundImage})`
@@ -21,7 +21,7 @@ const PageHero = ({ title, subtitle, backgroundImage }: PageHeroProps) => {
       )}
       <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto text-center text-primary-foreground">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4 animate-fade-in">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-3 md:mb-4 animate-fade-in">
             {title}
           </h1>
           {subtitle && (

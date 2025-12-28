@@ -55,31 +55,31 @@ const HomePage = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center">
+      <section className="relative min-h-[80vh] sm:min-h-[85vh] md:min-h-[90vh] flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `linear-gradient(to bottom, hsl(var(--hero-overlay) / 0.75), hsl(var(--hero-overlay) / 0.85)), url(${program2})`,
           }}
         />
-        <div className="container-custom relative z-10 text-center text-primary-foreground px-4 py-20">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-bold mb-6 animate-fade-in leading-tight">
+        <div className="container-custom relative z-10 text-center text-primary-foreground px-4 py-12 sm:py-16 md:py-20">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold mb-4 sm:mb-6 animate-fade-in leading-tight">
             Empowering Lives,<br />
             <span className="text-accent">Building Hope</span>
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto mb-8 text-primary-foreground/90 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto mb-6 sm:mb-8 text-primary-foreground/90 animate-fade-in px-2" style={{ animationDelay: "0.1s" }}>
             Kalango Helping People's Foundation is dedicated to uplifting the less privileged, 
             empowering the Nembe people, and creating lasting positive change in our communities.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <Link to="/donate">
-              <Button size="lg" className="gap-2 text-lg px-8">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in px-4" style={{ animationDelay: "0.2s" }}>
+            <Link to="/donate" className="w-full sm:w-auto">
+              <Button size="lg" className="gap-2 text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
                 <Heart className="h-5 w-5" />
                 Donate Now
               </Button>
             </Link>
-            <Link to="/volunteer">
-              <Button size="lg" variant="outline" className="gap-2 text-lg px-8 bg-background/10 border-background/30 text-background hover:bg-background/20">
+            <Link to="/volunteer" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="gap-2 text-base sm:text-lg px-6 sm:px-8 bg-background/10 border-background/30 text-background hover:bg-background/20 w-full sm:w-auto">
                 <Users className="h-5 w-5" />
                 Become a Volunteer
               </Button>
@@ -91,39 +91,39 @@ const HomePage = () => {
       {/* Mission Introduction */}
       <section className="section-padding bg-card">
         <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <span className="text-primary font-semibold text-sm uppercase tracking-wider">Our Mission</span>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mt-2 mb-6">
+              <span className="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider">Our Mission</span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold mt-2 mb-4 sm:mb-6">
                 Transforming Lives Through Compassion and Action
               </h2>
-              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+              <p className="text-muted-foreground text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed">
                 At Kalango Helping People's Foundation, we believe that every person deserves access to 
                 basic necessities, education, and opportunities for growth. Founded with a vision to 
                 serve the Nembe people and vulnerable communities across Nigeria, we work tirelessly 
                 to bridge the gap between need and support.
               </p>
-              <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+              <p className="text-muted-foreground text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
                 Through our welfare programs, educational initiatives, and community outreach efforts, 
                 we've touched thousands of lives—and with your support, we can reach even more.
               </p>
               <Link to="/about">
-                <Button variant="outline" className="gap-2">
+                <Button variant="outline" className="gap-2 w-full sm:w-auto">
                   Learn More About Us
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <img
                 src={program4}
                 alt="Community outreach program"
-                className="rounded-lg w-full h-48 md:h-64 object-cover hover-lift"
+                className="rounded-lg w-full h-36 sm:h-48 md:h-64 object-cover hover-lift"
               />
               <img
                 src={program6}
                 alt="Helping community members"
-                className="rounded-lg w-full h-48 md:h-64 object-cover mt-8 hover-lift"
+                className="rounded-lg w-full h-36 sm:h-48 md:h-64 object-cover mt-6 sm:mt-8 hover-lift"
               />
             </div>
           </div>
@@ -140,30 +140,30 @@ const HomePage = () => {
             title="Our Programs"
             subtitle="Discover how we're making a difference in communities across Nigeria through our focused initiatives."
           />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {programs.map((program, index) => (
               <div
                 key={program.title}
                 className="group bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover-lift animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative h-44 sm:h-48 md:h-56 overflow-hidden">
                   <img
                     src={program.image}
                     alt={program.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
-                  <div className="absolute bottom-4 left-4 p-3 bg-primary rounded-full">
-                    <program.icon className="h-6 w-6 text-primary-foreground" />
+                  <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 p-2 sm:p-3 bg-primary rounded-full">
+                    <program.icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary-foreground" />
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-display font-bold mb-3">{program.title}</h3>
-                  <p className="text-muted-foreground mb-4">{program.description}</p>
+                <div className="p-4 sm:p-5 md:p-6">
+                  <h3 className="text-lg sm:text-xl font-display font-bold mb-2 sm:mb-3">{program.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">{program.description}</p>
                   <Link
                     to="/programs"
-                    className="inline-flex items-center text-primary font-semibold hover:gap-3 gap-2 transition-all"
+                    className="inline-flex items-center text-primary font-semibold hover:gap-3 gap-2 transition-all text-sm sm:text-base"
                   >
                     Learn More
                     <ArrowRight className="h-4 w-4" />
@@ -172,9 +172,9 @@ const HomePage = () => {
               </div>
             ))}
           </div>
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-10 md:mt-12">
             <Link to="/programs">
-              <Button size="lg" variant="outline" className="gap-2">
+              <Button size="lg" variant="outline" className="gap-2 w-full sm:w-auto">
                 View All Programs
                 <ArrowRight className="h-4 w-4" />
               </Button>
@@ -190,20 +190,20 @@ const HomePage = () => {
             title="Voices of Impact"
             subtitle="Hear from the people whose lives have been touched by our work."
           />
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {testimonials.map((testimonial, index) => (
               <div
                 key={testimonial.name}
-                className="bg-card p-8 rounded-xl shadow-sm animate-fade-in"
+                className="bg-card p-5 sm:p-6 md:p-8 rounded-xl shadow-sm animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="text-accent text-5xl font-serif mb-4">"</div>
-                <p className="text-foreground/80 mb-6 italic leading-relaxed">
+                <div className="text-accent text-4xl sm:text-5xl font-serif mb-3 sm:mb-4">"</div>
+                <p className="text-sm sm:text-base text-foreground/80 mb-4 sm:mb-6 italic leading-relaxed">
                   {testimonial.quote}
                 </p>
                 <div>
-                  <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <p className="font-semibold text-foreground text-sm sm:text-base">{testimonial.name}</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.role}</p>
                 </div>
               </div>
             ))}
@@ -220,23 +220,23 @@ const HomePage = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="container-custom text-center text-primary-foreground">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
+        <div className="container-custom text-center text-primary-foreground px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 sm:mb-6">
             Join Us in Making a Difference
           </h2>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-primary-foreground/90">
+          <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-6 sm:mb-8 text-primary-foreground/90">
             Whether through donations, volunteering, or spreading the word—every contribution 
             helps us reach more people in need.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/donate">
-              <Button size="lg" className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Link to="/donate" className="w-full sm:w-auto">
+              <Button size="lg" className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90 w-full sm:w-auto">
                 <Heart className="h-5 w-5" />
                 Make a Donation
               </Button>
             </Link>
-            <Link to="/volunteer">
-              <Button size="lg" variant="outline" className="gap-2 bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+            <Link to="/volunteer" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="gap-2 bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 w-full sm:w-auto">
                 <Users className="h-5 w-5" />
                 Volunteer With Us
               </Button>

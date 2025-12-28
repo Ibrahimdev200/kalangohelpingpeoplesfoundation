@@ -103,32 +103,32 @@ const EventsPage = () => {
             title="Past Events"
             subtitle="A look back at some of our impactful community programs and events."
           />
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             {pastEvents.map((event, index) => (
               <div
                 key={event.title}
                 className="bg-muted rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
               >
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative h-44 sm:h-48 md:h-56 overflow-hidden">
                   <img
                     src={event.image}
                     alt={event.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-6">
-                  <div className="flex flex-wrap gap-4 mb-3 text-sm text-muted-foreground">
+                <div className="p-4 sm:p-5 md:p-6">
+                  <div className="flex flex-wrap gap-2 sm:gap-4 mb-2 sm:mb-3 text-xs sm:text-sm text-muted-foreground">
                     <span className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
+                      <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
                       {event.date}
                     </span>
                     <span className="flex items-center gap-1">
-                      <MapPin className="h-4 w-4" />
+                      <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
                       {event.location}
                     </span>
                   </div>
-                  <h3 className="text-xl font-display font-bold mb-2">{event.title}</h3>
-                  <p className="text-muted-foreground">{event.description}</p>
+                  <h3 className="text-lg sm:text-xl font-display font-bold mb-1 sm:mb-2">{event.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground">{event.description}</p>
                 </div>
               </div>
             ))}
@@ -143,24 +143,24 @@ const EventsPage = () => {
             title="Upcoming Events"
             subtitle="Join us at our upcoming programs and make a difference together."
           />
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto">
             {upcomingEvents.map((event) => (
               <div
                 key={event.title}
-                className="bg-card p-8 rounded-xl shadow-sm border-l-4 border-primary"
+                className="bg-card p-5 sm:p-6 md:p-8 rounded-xl shadow-sm border-l-4 border-primary"
               >
-                <div className="flex flex-wrap gap-4 mb-3 text-sm text-muted-foreground">
+                <div className="flex flex-wrap gap-2 sm:gap-4 mb-2 sm:mb-3 text-xs sm:text-sm text-muted-foreground">
                   <span className="flex items-center gap-1 text-primary font-semibold">
-                    <Calendar className="h-4 w-4" />
+                    <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
                     {event.date}
                   </span>
                   <span className="flex items-center gap-1">
-                    <MapPin className="h-4 w-4" />
+                    <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
                     {event.location}
                   </span>
                 </div>
-                <h3 className="text-xl font-display font-bold mb-2">{event.title}</h3>
-                <p className="text-muted-foreground mb-4">{event.description}</p>
+                <h3 className="text-lg sm:text-xl font-display font-bold mb-1 sm:mb-2">{event.title}</h3>
+                <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">{event.description}</p>
                 <Button variant="outline" size="sm">
                   Learn More
                 </Button>
@@ -177,7 +177,7 @@ const EventsPage = () => {
             title="Photo Gallery"
             subtitle="Moments captured from our programs and community activities."
           />
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
             {galleryImages.map((image, index) => (
               <button
                 key={index}
@@ -190,7 +190,7 @@ const EventsPage = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/30 transition-colors flex items-center justify-center">
-                  <span className="text-background opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+                  <span className="text-background opacity-0 group-hover:opacity-100 transition-opacity font-semibold text-sm sm:text-base">
                     View
                   </span>
                 </div>
@@ -207,7 +207,7 @@ const EventsPage = () => {
             title="Video Gallery"
             subtitle="Watch our impact stories and program highlights."
           />
-          <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-card rounded-xl overflow-hidden shadow-sm">
               <video
                 controls
@@ -217,9 +217,9 @@ const EventsPage = () => {
                 <source src="/videos/toilet-renovation.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <div className="p-4">
-                <h3 className="font-display font-bold">Community Toilet Renovation</h3>
-                <p className="text-muted-foreground text-sm">Improving sanitation facilities for the Nembe community.</p>
+              <div className="p-3 sm:p-4">
+                <h3 className="font-display font-bold text-sm sm:text-base">Community Toilet Renovation</h3>
+                <p className="text-muted-foreground text-xs sm:text-sm">Improving sanitation facilities for the Nembe community.</p>
               </div>
             </div>
             <div className="bg-card rounded-xl overflow-hidden shadow-sm">
@@ -231,9 +231,9 @@ const EventsPage = () => {
                 <source src="/videos/community-event-1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <div className="p-4">
-                <h3 className="font-display font-bold">Christmas Children's Party 2025</h3>
-                <p className="text-muted-foreground text-sm">Celebrating with children at Unity Bridge, Nembe.</p>
+              <div className="p-3 sm:p-4">
+                <h3 className="font-display font-bold text-sm sm:text-base">Christmas Children's Party 2025</h3>
+                <p className="text-muted-foreground text-xs sm:text-sm">Celebrating with children at Unity Bridge, Nembe.</p>
               </div>
             </div>
             <div className="bg-card rounded-xl overflow-hidden shadow-sm">
@@ -245,9 +245,9 @@ const EventsPage = () => {
                 <source src="/videos/community-event-2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <div className="p-4">
-                <h3 className="font-display font-bold">Community Outreach Highlights</h3>
-                <p className="text-muted-foreground text-sm">Moments from our community support programs.</p>
+              <div className="p-3 sm:p-4">
+                <h3 className="font-display font-bold text-sm sm:text-base">Community Outreach Highlights</h3>
+                <p className="text-muted-foreground text-xs sm:text-sm">Moments from our community support programs.</p>
               </div>
             </div>
             <div className="bg-card rounded-xl overflow-hidden shadow-sm">
@@ -259,9 +259,9 @@ const EventsPage = () => {
                 <source src="/videos/community-event-3.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <div className="p-4">
-                <h3 className="font-display font-bold">Foundation Activities</h3>
-                <p className="text-muted-foreground text-sm">Our volunteers making a difference in the community.</p>
+              <div className="p-3 sm:p-4">
+                <h3 className="font-display font-bold text-sm sm:text-base">Foundation Activities</h3>
+                <p className="text-muted-foreground text-xs sm:text-sm">Our volunteers making a difference in the community.</p>
               </div>
             </div>
           </div>

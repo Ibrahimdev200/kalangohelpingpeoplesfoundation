@@ -24,17 +24,17 @@ const Header = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between py-4 px-4 md:px-6">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3">
             <img
               src={logo}
               alt="Kalango Helping People's Foundation Logo"
-              className="h-12 w-12 md:h-14 md:w-14 rounded-full object-cover"
+              className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 rounded-full object-cover"
             />
-            <div className="hidden sm:block">
-              <h1 className="text-lg md:text-xl font-display font-bold text-primary leading-tight">
+            <div>
+              <h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-display font-bold text-primary leading-tight">
                 Kalango Helping
               </h1>
-              <p className="text-xs md:text-sm text-muted-foreground">
+              <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">
                 People's Foundation
               </p>
             </div>

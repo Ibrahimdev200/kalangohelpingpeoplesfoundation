@@ -39,6 +39,7 @@ import gallery31 from "@/assets/gallery-31.jpg";
 import gallery32 from "@/assets/gallery-32.jpg";
 import gallery33 from "@/assets/gallery-33.jpg";
 import gallery34 from "@/assets/gallery-34.jpg";
+import wheelchairPoster from "@/assets/wheelchair-donation-poster.jpg";
 
 const pastEvents = [
   {
@@ -300,6 +301,20 @@ const EventsPage = () => {
               <div className="p-3 sm:p-4">
                 <h3 className="font-display font-bold text-sm sm:text-base">Foundation Activities</h3>
                 <p className="text-muted-foreground text-xs sm:text-sm">Our volunteers making a difference in the community.</p>
+              </div>
+            </div>
+            <div className="bg-card rounded-xl overflow-hidden shadow-sm">
+              <video
+                controls
+                className="w-full aspect-video object-cover"
+                poster={wheelchairPoster}
+              >
+                <source src="/videos/wheelchair-donation.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="p-3 sm:p-4">
+                <h3 className="font-display font-bold text-sm sm:text-base">Wheelchair Donation</h3>
+                <p className="text-muted-foreground text-xs sm:text-sm">Providing mobility support to children in need.</p>
               </div>
             </div>
           </div>

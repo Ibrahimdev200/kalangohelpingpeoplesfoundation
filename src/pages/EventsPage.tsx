@@ -20,6 +20,16 @@ import gallery12 from "@/assets/gallery-12.jpg";
 import gallery13 from "@/assets/gallery-13.jpg";
 import gallery14 from "@/assets/gallery-14.jpg";
 import gallery15 from "@/assets/gallery-15.jpg";
+import gallery16 from "@/assets/gallery-16.jpg";
+import gallery17 from "@/assets/gallery-17.jpg";
+import gallery18 from "@/assets/gallery-18.jpg";
+import gallery19 from "@/assets/gallery-19.jpg";
+import gallery20 from "@/assets/gallery-20.jpg";
+import gallery21 from "@/assets/gallery-21.jpg";
+import gallery22 from "@/assets/gallery-22.jpg";
+import gallery23 from "@/assets/gallery-23.jpg";
+import gallery24 from "@/assets/gallery-24.jpg";
+import gallery25 from "@/assets/gallery-25.jpg";
 
 const pastEvents = [
   {
@@ -83,6 +93,16 @@ const galleryImages = [
   { src: gallery13, alt: "Foundation volunteers with children" },
   { src: gallery14, alt: "Wheelchair donation for disabled child" },
   { src: gallery15, alt: "Mobility equipment distribution" },
+  { src: gallery16, alt: "Award presentation to community child" },
+  { src: gallery17, alt: "Children at community event" },
+  { src: gallery18, alt: "Foundation leader with young participants" },
+  { src: gallery19, alt: "Foundation team with community families" },
+  { src: gallery20, alt: "Traditional dance performance" },
+  { src: gallery21, alt: "Community engagement activities" },
+  { src: gallery22, alt: "Youth speaking at community event" },
+  { src: gallery23, alt: "Children gathered at community outreach" },
+  { src: gallery24, alt: "Traditional masquerade performance" },
+  { src: gallery25, alt: "Children's dance activities" },
 ];
 
 const EventsPage = () => {

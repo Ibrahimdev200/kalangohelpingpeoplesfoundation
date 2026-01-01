@@ -30,6 +30,15 @@ import gallery22 from "@/assets/gallery-22.jpg";
 import gallery23 from "@/assets/gallery-23.jpg";
 import gallery24 from "@/assets/gallery-24.jpg";
 import gallery25 from "@/assets/gallery-25.jpg";
+import gallery26 from "@/assets/gallery-26.jpg";
+import gallery27 from "@/assets/gallery-27.jpg";
+import gallery28 from "@/assets/gallery-28.jpg";
+import gallery29 from "@/assets/gallery-29.jpg";
+import gallery30 from "@/assets/gallery-30.jpg";
+import gallery31 from "@/assets/gallery-31.jpg";
+import gallery32 from "@/assets/gallery-32.jpg";
+import gallery33 from "@/assets/gallery-33.jpg";
+import gallery34 from "@/assets/gallery-34.jpg";
 
 const pastEvents = [
   {
@@ -103,6 +112,15 @@ const galleryImages = [
   { src: gallery23, alt: "Children gathered at community outreach" },
   { src: gallery24, alt: "Traditional masquerade performance" },
   { src: gallery25, alt: "Children's dance activities" },
+  { src: gallery26, alt: "MC entertaining the crowd" },
+  { src: gallery27, alt: "Children dancing at community event" },
+  { src: gallery28, alt: "Award ceremony with young winner" },
+  { src: gallery29, alt: "Foundation team group photo" },
+  { src: gallery30, alt: "Foundation leaders at event table" },
+  { src: gallery31, alt: "Youth participants with microphone" },
+  { src: gallery32, alt: "Traditional drummers performance" },
+  { src: gallery33, alt: "Community event wide view" },
+  { src: gallery34, alt: "Foundation team seated at event" },
 ];
 
 const EventsPage = () => {

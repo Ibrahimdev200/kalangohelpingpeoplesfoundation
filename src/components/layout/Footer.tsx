@@ -93,8 +93,8 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-accent shrink-0 mt-0.5" />
-                <a href="mailto:info@kalangohelpingpeoplesfoundation.com" className="text-background/80 hover:text-accent text-xs sm:text-sm break-all">
-                  info@kalangohelpingpeoplesfoundation.com
+                <a href="mailto:info@kalangohelpingpeoplesfoundation.com.ng" className="text-background/80 hover:text-accent text-xs sm:text-sm break-all">
+                  info@kalangohelpingpeoplesfoundation.com.ng
                 </a>
               </li>
             </ul>

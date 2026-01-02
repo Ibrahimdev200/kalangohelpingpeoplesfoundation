@@ -25,8 +25,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Address",
-    details: ["info@kalangohelpingpeoplesfoundation.com"],
-    link: "mailto:info@kalangohelpingpeoplesfoundation.com",
+    details: ["info@kalangohelpingpeoplesfoundation.com.ng"],
+    link: "mailto:info@kalangohelpingpeoplesfoundation.com.ng",
   },
 ];
 

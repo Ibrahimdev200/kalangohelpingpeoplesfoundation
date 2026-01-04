@@ -179,7 +179,7 @@ const DonatePage = () => {
                   <p className="text-xs text-primary font-semibold mb-2">
                     {supporter.title}
                   </p>
-                  <p className="text-xs text-muted-foreground leading-relaxed line-clamp-2">
+                  <p className="text-xs text-muted-foreground leading-relaxed">
                     {supporter.description}
                   </p>
                 </div>

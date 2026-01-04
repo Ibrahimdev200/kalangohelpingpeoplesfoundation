@@ -153,31 +153,33 @@ const DonatePage = () => {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {supporters.map((supporter, index) => (
               <div 
                 key={index} 
-                className="bg-card rounded-xl overflow-hidden shadow-sm hover-lift group"
+                className="bg-card rounded-2xl overflow-hidden shadow-lg hover-lift group border border-border/50"
               >
-                <div className="aspect-[3/4] overflow-hidden bg-muted">
-                  <img 
-                    src={supporter.image} 
-                    alt={supporter.name}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop";
-                    }}
-                  />
+                <div className="p-4 pb-0">
+                  <div className="aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 p-1">
+                    <img 
+                      src={supporter.image} 
+                      alt={supporter.name}
+                      className="w-full h-full object-cover object-top rounded-lg group-hover:scale-105 transition-transform duration-500"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop";
+                      }}
+                    />
+                  </div>
                 </div>
-                <div className="p-4">
-                  <h3 className="text-sm font-display font-bold text-foreground mb-0.5 leading-tight">
+                <div className="p-4 text-center">
+                  <h3 className="text-sm font-display font-bold text-foreground mb-1 leading-tight">
                     {supporter.name}
                   </h3>
                   <p className="text-xs text-primary font-semibold mb-2">
                     {supporter.title}
                   </p>
-                  <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3">
+                  <p className="text-xs text-muted-foreground leading-relaxed line-clamp-2">
                     {supporter.description}
                   </p>
                 </div>

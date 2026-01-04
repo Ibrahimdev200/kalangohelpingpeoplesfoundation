@@ -11,7 +11,7 @@ import supporterDouyeDiri from "@/assets/supporter-douye-diri.jpg";
 import supporterAtekeTom from "@/assets/supporter-ateke-tom.jpg";
 import supporterKojoSam from "@/assets/supporter-kojo-sam.jpg";
 import supporterSamuelOgbuku from "@/assets/supporter-samuel-ogbuku.jpg";
-import supporterTompolo from "@/assets/supporter-tompolo.jpg";
+import supporterTompolo from "@/assets/supporter-tompolo.png";
 import supporterWike from "@/assets/supporter-wike.jpg";
 
 const donationUses = [

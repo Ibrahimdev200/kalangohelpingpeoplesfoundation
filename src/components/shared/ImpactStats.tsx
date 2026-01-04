@@ -3,8 +3,8 @@ import { Users, Heart, MapPin, Calendar } from "lucide-react";
 const stats = [
   { icon: Users, value: "5,000+", label: "Lives Impacted" },
   { icon: Heart, value: "50+", label: "Programs Run" },
-  { icon: MapPin, value: "20+", label: "Communities Reached" },
-  { icon: Calendar, value: "10+", label: "Years of Service" },
+  { icon: MapPin, value: "8+", label: "Communities Reached" },
+  { icon: Calendar, value: "20+", label: "Years of Service" },
 ];
 
 interface ImpactStatsProps {

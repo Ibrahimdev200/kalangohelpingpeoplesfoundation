@@ -8,9 +8,29 @@ import ImpactStats from "@/components/shared/ImpactStats";
 import program1 from "@/assets/program-1.jpg";
 import program2 from "@/assets/program-2.jpg";
 import program3 from "@/assets/program-3.jpg";
-import program4 from "@/assets/program-4.jpg";
 import program5 from "@/assets/program-5.jpg";
-import program6 from "@/assets/program-6.jpg";
+
+import supporterTompolo from "@/assets/supporter-tompolo.png";
+import supporterWike from "@/assets/supporter-wike.jpg";
+import supporterAteke from "@/assets/supporter-ateke-tom.jpg";
+
+const supporters = [
+  {
+    name: "High Chief Government Ekpemupolo",
+    title: "Tompolo - Niger Delta Leader",
+    image: supporterTompolo,
+  },
+  {
+    name: "Nyesom Wike",
+    title: "FCT Minister",
+    image: supporterWike,
+  },
+  {
+    name: "Chief Ateke Tom",
+    title: "Community Leader",
+    image: supporterAteke,
+  },
+];
 
 const programs = [
   {
@@ -115,17 +135,31 @@ const HomePage = () => {
                 </Button>
               </Link>
             </div>
-            <div className="grid grid-cols-2 gap-3 sm:gap-4">
-              <img
-                src={program4}
-                alt="Community outreach program"
-                className="rounded-lg w-full h-36 sm:h-48 md:h-64 object-cover hover-lift"
-              />
-              <img
-                src={program6}
-                alt="Helping community members"
-                className="rounded-lg w-full h-36 sm:h-48 md:h-64 object-cover mt-6 sm:mt-8 hover-lift"
-              />
+            <div>
+              <h3 className="text-lg sm:text-xl font-display font-semibold mb-4 sm:mb-6 text-center lg:text-left">Our Valued Supporters</h3>
+              <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6">
+                {supporters.map((supporter) => (
+                  <div key={supporter.name} className="text-center group">
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 mx-auto mb-2 sm:mb-3 rounded-full overflow-hidden border-3 border-primary/20 group-hover:border-primary transition-colors duration-300 hover-lift">
+                      <img
+                        src={supporter.image}
+                        alt={supporter.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <p className="font-semibold text-xs sm:text-sm text-foreground line-clamp-2">{supporter.name}</p>
+                    <p className="text-[10px] sm:text-xs text-muted-foreground line-clamp-1">{supporter.title}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="text-center mt-4 sm:mt-6">
+                <Link to="/supporters">
+                  <Button variant="outline" size="sm" className="gap-2">
+                    Learn More
+                    <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -173,17 +207,11 @@ const HomePage = () => {
               </div>
             ))}
           </div>
-          <div className="text-center mt-8 sm:mt-10 md:mt-12 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+          <div className="text-center mt-8 sm:mt-10 md:mt-12">
             <Link to="/programs">
               <Button size="lg" variant="outline" className="gap-2 w-full sm:w-auto">
                 View All Programs
                 <ArrowRight className="h-4 w-4" />
-              </Button>
-            </Link>
-            <Link to="/supporters">
-              <Button size="lg" variant="outline" className="gap-2 w-full sm:w-auto">
-                <Heart className="h-4 w-4" />
-                Meet Our Supporters
               </Button>
             </Link>
           </div>

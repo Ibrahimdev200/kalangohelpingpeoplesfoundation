@@ -13,6 +13,7 @@ import program5 from "@/assets/program-5.jpg";
 import supporterTompolo from "@/assets/supporter-tompolo.png";
 import supporterWike from "@/assets/supporter-wike.jpg";
 import supporterAteke from "@/assets/supporter-ateke-tom.jpg";
+import supporterJohnnie from "@/assets/supporter-johnnie-turner.jpg";
 
 const supporters = [
   {
@@ -29,6 +30,11 @@ const supporters = [
     name: "Chief Ateke Tom",
     title: "Community Leader",
     image: supporterAteke,
+  },
+  {
+    name: "Chief Erefagha Johnnie Turner",
+    title: "Nembe Chief",
+    image: supporterJohnnie,
   },
 ];
 
@@ -137,25 +143,25 @@ const HomePage = () => {
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-display font-semibold mb-4 sm:mb-6 text-center lg:text-left">Our Valued Supporters</h3>
-              <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6">
+              <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 {supporters.map((supporter) => (
                   <div key={supporter.name} className="text-center group">
-                    <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 mx-auto mb-2 sm:mb-3 rounded-full overflow-hidden border-3 border-primary/20 group-hover:border-primary transition-colors duration-300 hover-lift">
+                    <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto mb-3 sm:mb-4 rounded-full overflow-hidden border-4 border-primary/30 group-hover:border-primary shadow-lg transition-all duration-300 hover-lift">
                       <img
                         src={supporter.image}
                         alt={supporter.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-top"
                       />
                     </div>
-                    <p className="font-semibold text-xs sm:text-sm text-foreground line-clamp-2">{supporter.name}</p>
-                    <p className="text-[10px] sm:text-xs text-muted-foreground line-clamp-1">{supporter.title}</p>
+                    <p className="font-bold text-sm sm:text-base text-foreground">{supporter.name}</p>
+                    <p className="text-xs sm:text-sm text-primary font-medium">{supporter.title}</p>
                   </div>
                 ))}
               </div>
-              <div className="text-center mt-4 sm:mt-6">
+              <div className="text-center mt-6 sm:mt-8">
                 <Link to="/supporters">
-                  <Button variant="outline" size="sm" className="gap-2">
-                    Learn More
+                  <Button variant="outline" className="gap-2">
+                    View All Supporters
                     <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>

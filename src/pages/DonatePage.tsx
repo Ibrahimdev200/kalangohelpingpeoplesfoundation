@@ -11,7 +11,6 @@ import supporterDouyeDiri from "@/assets/supporter-douye-diri.jpg";
 import supporterAtekeTom from "@/assets/supporter-ateke-tom.jpg";
 import supporterKojoSam from "@/assets/supporter-kojo-sam.jpg";
 import supporterSamuelOgbuku from "@/assets/supporter-samuel-ogbuku.jpg";
-import supporterFelixOgbe from "@/assets/supporter-felix-ogbe.jpg";
 
 const donationUses = [
   "Food packages for families in need",
@@ -57,6 +56,18 @@ const supporters = [
     image: supporterDouyeDiri,
   },
   {
+    name: "His Excellency, Nyesom Wike",
+    title: "Minister of the Federal Capital Territory",
+    description: "Former Governor of Rivers State and current FCT Minister, known for his transformative infrastructure projects and support for community development across Nigeria.",
+    image: "https://cdn.punchng.com/wp-content/uploads/2024/01/17182159/Nyesom-Wike-1.webp",
+  },
+  {
+    name: "High Chief Government Ekpemupolo (Tompolo)",
+    title: "Chairman, Tantita Security Services",
+    description: "A prominent Niger Delta leader and Chief Priest of Egbesu deity. Founder of Tantita Security Services and strong advocate for Niger Delta development and environmental protection.",
+    image: "https://pbs.twimg.com/profile_images/1742861666161565696/LpP15MXq_400x400.jpg",
+  },
+  {
     name: "HRM King Ateke Michael Tom",
     title: "Amanyanabo of Okochiri Kingdom",
     description: "His Royal Majesty, a first-class traditional ruler and peace advocate from Rivers State, has been instrumental in promoting peace and development in the Niger Delta region.",
@@ -73,12 +84,6 @@ const supporters = [
     title: "Managing Director, NDDC",
     description: "As the Managing Director of the Niger Delta Development Commission (NDDC), Dr. Ogbuku has championed various development projects benefiting communities in the region.",
     image: supporterSamuelOgbuku,
-  },
-  {
-    name: "Engr. Felix Omatsola Ogbe",
-    title: "Executive Secretary, NCDMB",
-    description: "As the Executive Secretary of the Nigerian Content Development and Monitoring Board (NCDMB), he promotes local participation in the oil and gas industry while supporting community initiatives.",
-    image: supporterFelixOgbe,
   },
 ];
 

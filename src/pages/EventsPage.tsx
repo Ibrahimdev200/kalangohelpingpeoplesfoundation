@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Calendar, MapPin, X, Music } from "lucide-react";
+import { Calendar, MapPin, X, Music, Newspaper } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import PageHero from "@/components/shared/PageHero";
@@ -246,7 +246,7 @@ const EventsPage = () => {
             title="Music Gallery"
             subtitle="Songs and music created by our volunteers in support of the foundation."
           />
-          <div className="max-w-2xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
             <div className="bg-card rounded-xl overflow-hidden shadow-sm p-6">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
@@ -259,6 +259,21 @@ const EventsPage = () => {
               </div>
               <audio controls className="w-full">
                 <source src="/audio/volunteer-song.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div className="bg-card rounded-xl overflow-hidden shadow-sm p-6">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center">
+                  <Newspaper className="w-8 h-8 text-accent" />
+                </div>
+                <div>
+                  <h3 className="font-display font-bold text-base sm:text-lg">2025 Close of Year Project</h3>
+                  <p className="text-muted-foreground text-sm">Foundation news and updates</p>
+                </div>
+              </div>
+              <audio controls className="w-full">
+                <source src="/audio/foundation-news-2025.aac" type="audio/aac" />
                 Your browser does not support the audio element.
               </audio>
             </div>

@@ -11,6 +11,7 @@ import supporterKojoSam from "@/assets/supporter-kojo-sam.png";
 import supporterSamuelOgbuku from "@/assets/supporter-samuel-ogbuku.webp";
 import supporterTompolo from "@/assets/supporter-tompolo.png";
 import supporterWike from "@/assets/supporter-wike.jpg";
+import supporterJohnnie from "@/assets/supporter-johnnie-turner.jpg";
 
 const supporters = [
   {
@@ -48,6 +49,12 @@ const supporters = [
     title: "Managing Director, NDDC",
     description: "As the Managing Director of the Niger Delta Development Commission (NDDC), Dr. Ogbuku has championed various development projects benefiting communities in the region.",
     image: supporterSamuelOgbuku,
+  },
+  {
+    name: "Chief Erefagha Johnnie Turner",
+    title: "Nembe Chief",
+    description: "A respected traditional leader from Nembe, Bayelsa State. Chief Turner has been a dedicated supporter of community development and youth empowerment initiatives in the region.",
+    image: supporterJohnnie,
   },
 ];
 

@@ -7,6 +7,11 @@ import SectionHeading from "@/components/shared/SectionHeading";
 import { useToast } from "@/hooks/use-toast";
 
 import program5 from "@/assets/program-5.jpg";
+import supporterDouyeDiri from "@/assets/supporter-douye-diri.jpg";
+import supporterAtekeTom from "@/assets/supporter-ateke-tom.jpg";
+import supporterKojoSam from "@/assets/supporter-kojo-sam.jpg";
+import supporterSamuelOgbuku from "@/assets/supporter-samuel-ogbuku.jpg";
+import supporterFelixOgbe from "@/assets/supporter-felix-ogbe.webp";
 
 const donationUses = [
   "Food packages for families in need",
@@ -49,31 +54,31 @@ const supporters = [
     name: "His Excellency, Senator Douye Diri",
     title: "Executive Governor of Bayelsa State",
     description: "Serving as the Governor of Bayelsa State since February 2020, His Excellency has been a steadfast supporter of community development initiatives across the state.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Douye_Diri_portrait.jpg/440px-Douye_Diri_portrait.jpg",
+    image: supporterDouyeDiri,
   },
   {
     name: "HRM King Ateke Michael Tom",
     title: "Amanyanabo of Okochiri Kingdom",
     description: "His Royal Majesty, a first-class traditional ruler and peace advocate from Rivers State, has been instrumental in promoting peace and development in the Niger Delta region.",
-    image: "https://i0.wp.com/www.naijanews.com/wp-content/uploads/2023/03/Ateke-Tom-e1678101430437.jpeg?fit=768%2C654&ssl=1",
+    image: supporterAtekeTom,
   },
   {
     name: "Chief Dr. Kojo Sam",
     title: "MD, Kojo Sam Logistics & Labrador Security Services",
     description: "A prominent Niger Delta philanthropist from Opu-Nembe, Bayelsa State. Known for his generous community empowerment programs and support for small business owners.",
-    image: "https://newtelegraphng.com/wp-content/uploads/2025/06/Kojo-Sam-5.jpg",
+    image: supporterKojoSam,
   },
   {
     name: "Dr. Samuel Ogbuku",
     title: "Managing Director, NDDC",
     description: "As the Managing Director of the Niger Delta Development Commission (NDDC), Dr. Ogbuku has championed various development projects benefiting communities in the region.",
-    image: "https://images.punchng.com/cms/Samuel-Ogbuku.webp",
+    image: supporterSamuelOgbuku,
   },
   {
     name: "Engr. Felix Omatsola Ogbe",
     title: "Executive Secretary, NCDMB",
     description: "As the Executive Secretary of the Nigerian Content Development and Monitoring Board (NCDMB), he promotes local participation in the oil and gas industry while supporting community initiatives.",
-    image: "https://i0.wp.com/sweetcrudereports.com/wp-content/uploads/2023/11/Felix-Ogbe-Omatsola.jpg?resize=800%2C445&ssl=1",
+    image: supporterFelixOgbe,
   },
 ];
 

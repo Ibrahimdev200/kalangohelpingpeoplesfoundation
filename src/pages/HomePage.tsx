@@ -14,22 +14,40 @@ import supporterTompolo from "@/assets/supporter-tompolo.png";
 import supporterWike from "@/assets/supporter-wike.jpg";
 import supporterAteke from "@/assets/supporter-ateke-tom.jpg";
 import supporterJohnnie from "@/assets/supporter-johnnie-turner.jpg";
+import supporterDouyeDiri from "@/assets/supporter-douye-diri.jpg";
+import supporterKojoSam from "@/assets/supporter-kojo-sam.png";
+import supporterSamuelOgbuku from "@/assets/supporter-samuel-ogbuku.webp";
 
 const supporters = [
+  {
+    name: "His Excellency, Senator Douye Diri",
+    title: "Executive Governor of Bayelsa State",
+    image: supporterDouyeDiri,
+  },
+  {
+    name: "His Excellency, Nyesom Wike",
+    title: "FCT Minister",
+    image: supporterWike,
+  },
   {
     name: "High Chief Government Ekpemupolo",
     title: "Tompolo - Niger Delta Leader",
     image: supporterTompolo,
   },
   {
-    name: "Nyesom Wike",
-    title: "FCT Minister",
-    image: supporterWike,
+    name: "HRM King Ateke Michael Tom",
+    title: "Amanyanabo of Okochiri Kingdom",
+    image: supporterAteke,
   },
   {
-    name: "King Ateke Tom",
-    title: "Niger Delta Leader",
-    image: supporterAteke,
+    name: "Chief Dr. Kojo Sam",
+    title: "MD, Kojo Sam Logistics",
+    image: supporterKojoSam,
+  },
+  {
+    name: "Dr. Samuel Ogbuku",
+    title: "Managing Director, NDDC",
+    image: supporterSamuelOgbuku,
   },
   {
     name: "Chief Erefagha Johnnie Turner",
@@ -143,18 +161,18 @@ const HomePage = () => {
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-display font-semibold mb-4 sm:mb-6 text-center lg:text-left">Our Valued Supporters</h3>
-              <div className="grid grid-cols-2 gap-4 sm:gap-6">
+              <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6">
                 {supporters.map((supporter) => (
                   <div key={supporter.name} className="text-center group">
-                    <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto mb-3 sm:mb-4 rounded-full overflow-hidden border-4 border-primary/30 group-hover:border-primary shadow-lg transition-all duration-300 hover-lift">
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 mx-auto mb-2 sm:mb-3 rounded-full overflow-hidden border-3 border-primary/30 group-hover:border-primary shadow-lg transition-all duration-300 hover-lift">
                       <img
                         src={supporter.image}
                         alt={supporter.name}
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
-                    <p className="font-bold text-sm sm:text-base text-foreground">{supporter.name}</p>
-                    <p className="text-xs sm:text-sm text-primary font-medium">{supporter.title}</p>
+                    <p className="font-bold text-[10px] sm:text-xs text-foreground line-clamp-2">{supporter.name}</p>
+                    <p className="text-[8px] sm:text-[10px] text-primary font-medium line-clamp-1">{supporter.title}</p>
                   </div>
                 ))}
               </div>

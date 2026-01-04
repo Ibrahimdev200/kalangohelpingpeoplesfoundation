@@ -27,8 +27,8 @@ const supporters = [
     image: supporterWike,
   },
   {
-    name: "Chief Ateke Tom",
-    title: "Community Leader",
+    name: "King Ateke Tom",
+    title: "Niger Delta Leader",
     image: supporterAteke,
   },
   {

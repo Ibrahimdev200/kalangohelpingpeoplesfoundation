@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Heart, Users, ArrowRight, HandHeart, GraduationCap, Utensils } from "lucide-react";
+import { Heart, Users, ArrowRight, HandHeart, GraduationCap, Utensils, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import SectionHeading from "@/components/shared/SectionHeading";
@@ -9,6 +9,7 @@ import program1 from "@/assets/program-1.jpg";
 import program2 from "@/assets/program-2.jpg";
 import program3 from "@/assets/program-3.jpg";
 import program5 from "@/assets/program-5.jpg";
+import founderImage from "@/assets/founder-korite.png";
 
 import supporterTompolo from "@/assets/supporter-tompolo.png";
 import supporterWike from "@/assets/supporter-wike.jpg";
@@ -128,6 +129,60 @@ const HomePage = () => {
                 Become a Volunteer
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Section */}
+      <section className="section-padding bg-gradient-to-br from-primary/5 via-background to-accent/5">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="relative order-2 lg:order-1">
+              <div className="relative z-10">
+                <span className="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider">Meet Our Founder</span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold mt-2 mb-4 sm:mb-6">
+                  Korite Michael Kalango
+                </h2>
+                <p className="text-muted-foreground text-base sm:text-lg mb-4 leading-relaxed">
+                  <strong className="text-foreground">Korite Michael Kalango</strong> is the visionary founder of 
+                  Kalango Helping People's Foundation. For over two decades, he has dedicated his life to 
+                  serving the less privileged in Nembe and across Bayelsa State.
+                </p>
+                <p className="text-muted-foreground text-base sm:text-lg mb-4 leading-relaxed">
+                  Born with a heart for service, Mr. Kalango has personally funded and sustained this 
+                  foundation since 2002, touching thousands of lives through food distribution, educational 
+                  scholarships, and community empowerment programs.
+                </p>
+                <p className="text-muted-foreground text-base sm:text-lg mb-6 leading-relaxed">
+                  His unwavering commitment to uplifting the vulnerable has made him a beacon of hope in 
+                  the Niger Delta region, inspiring countless others to join the mission of compassion 
+                  and community service.
+                </p>
+                <div className="bg-card p-4 sm:p-5 rounded-xl border border-border/50 shadow-sm">
+                  <Quote className="h-6 w-6 text-primary mb-2" />
+                  <p className="text-foreground italic text-sm sm:text-base">
+                    "True wealth is not measured by what we have, but by what we give. Every life we touch, 
+                    every hope we restore, is a testament to the power of compassion."
+                  </p>
+                  <p className="text-primary font-semibold text-sm mt-3">— Korite Michael Kalango</p>
+                </div>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2 flex justify-center">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-2xl" />
+                <div className="relative w-64 h-80 sm:w-80 sm:h-96 md:w-96 md:h-[28rem] rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl">
+                  <img
+                    src={founderImage}
+                    alt="Korite Michael Kalango - Founder of Kalango Helping People's Foundation"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg shadow-lg">
+                  <p className="font-bold text-sm sm:text-base">Founder & Visionary</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

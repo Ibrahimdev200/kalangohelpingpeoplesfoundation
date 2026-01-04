@@ -11,7 +11,7 @@ import supporterDouyeDiri from "@/assets/supporter-douye-diri.jpg";
 import supporterAtekeTom from "@/assets/supporter-ateke-tom.jpg";
 import supporterKojoSam from "@/assets/supporter-kojo-sam.jpg";
 import supporterSamuelOgbuku from "@/assets/supporter-samuel-ogbuku.jpg";
-import supporterFelixOgbe from "@/assets/supporter-felix-ogbe.webp";
+import supporterFelixOgbe from "@/assets/supporter-felix-ogbe.jpg";
 
 const donationUses = [
   "Food packages for families in need",

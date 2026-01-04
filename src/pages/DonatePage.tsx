@@ -12,6 +12,7 @@ import supporterAtekeTom from "@/assets/supporter-ateke-tom.jpg";
 import supporterKojoSam from "@/assets/supporter-kojo-sam.jpg";
 import supporterSamuelOgbuku from "@/assets/supporter-samuel-ogbuku.jpg";
 import supporterTompolo from "@/assets/supporter-tompolo.jpg";
+import supporterWike from "@/assets/supporter-wike.jpg";
 
 const donationUses = [
   "Food packages for families in need",
@@ -60,7 +61,7 @@ const supporters = [
     name: "His Excellency, Nyesom Wike",
     title: "Minister of the Federal Capital Territory",
     description: "Former Governor of Rivers State and current FCT Minister, known for his transformative infrastructure projects and support for community development across Nigeria.",
-    image: "https://cdn.punchng.com/wp-content/uploads/2024/01/17182159/Nyesom-Wike-1.webp",
+    image: supporterWike,
   },
   {
     name: "High Oweizidei Thomas Ekpemupolo (Tompolo)",

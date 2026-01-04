@@ -153,31 +153,31 @@ const DonatePage = () => {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
             {supporters.map((supporter, index) => (
               <div 
                 key={index} 
                 className="bg-card rounded-xl overflow-hidden shadow-sm hover-lift group"
               >
-                <div className="aspect-[4/3] overflow-hidden bg-muted">
+                <div className="aspect-[3/4] overflow-hidden bg-muted">
                   <img 
                     src={supporter.image} 
                     alt={supporter.name}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop";
                     }}
                   />
                 </div>
-                <div className="p-5">
-                  <h3 className="text-lg font-display font-bold text-foreground mb-1">
+                <div className="p-4">
+                  <h3 className="text-sm font-display font-bold text-foreground mb-0.5 leading-tight">
                     {supporter.name}
                   </h3>
-                  <p className="text-sm text-primary font-semibold mb-3">
+                  <p className="text-xs text-primary font-semibold mb-2">
                     {supporter.title}
                   </p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3">
                     {supporter.description}
                   </p>
                 </div>

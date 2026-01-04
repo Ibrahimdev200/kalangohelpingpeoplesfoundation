@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { Heart, Shield, CreditCard, Building, Check, MessageCircle, Phone } from "lucide-react";
+import { Heart, Shield, CreditCard, Building, Check, MessageCircle, Phone, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
+import { useToast } from "@/hooks/use-toast";
 
 import program5 from "@/assets/program-5.jpg";
 
@@ -17,6 +18,12 @@ const donationUses = [
 ];
 
 const bankAccounts = [
+  {
+    currency: "Nigerian Naira (NGN)",
+    accountNumber: "0895862663",
+    bankName: "GTB Bank",
+    accountName: "Kalango Links Nigeria Limited",
+  },
   {
     currency: "Euro (EUR)",
     accountNumber: "0895862694",
@@ -37,7 +44,49 @@ const bankAccounts = [
   },
 ];
 
+const supporters = [
+  {
+    name: "His Excellency, Senator Douye Diri",
+    title: "Executive Governor of Bayelsa State",
+    description: "Serving as the Governor of Bayelsa State since February 2020, His Excellency has been a steadfast supporter of community development initiatives across the state.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Douye_Diri_portrait.jpg/440px-Douye_Diri_portrait.jpg",
+  },
+  {
+    name: "HRM King Ateke Michael Tom",
+    title: "Amanyanabo of Okochiri Kingdom",
+    description: "His Royal Majesty, a first-class traditional ruler and peace advocate from Rivers State, has been instrumental in promoting peace and development in the Niger Delta region.",
+    image: "https://i0.wp.com/www.naijanews.com/wp-content/uploads/2023/03/Ateke-Tom-e1678101430437.jpeg?fit=768%2C654&ssl=1",
+  },
+  {
+    name: "Chief Dr. Kojo Sam",
+    title: "MD, Kojo Sam Logistics & Labrador Security Services",
+    description: "A prominent Niger Delta philanthropist from Opu-Nembe, Bayelsa State. Known for his generous community empowerment programs and support for small business owners.",
+    image: "https://newtelegraphng.com/wp-content/uploads/2025/06/Kojo-Sam-5.jpg",
+  },
+  {
+    name: "Dr. Samuel Ogbuku",
+    title: "Managing Director, NDDC",
+    description: "As the Managing Director of the Niger Delta Development Commission (NDDC), Dr. Ogbuku has championed various development projects benefiting communities in the region.",
+    image: "https://images.punchng.com/cms/Samuel-Ogbuku.webp",
+  },
+  {
+    name: "Engr. Felix Omatsola Ogbe",
+    title: "Executive Secretary, NCDMB",
+    description: "As the Executive Secretary of the Nigerian Content Development and Monitoring Board (NCDMB), he promotes local participation in the oil and gas industry while supporting community initiatives.",
+    image: "https://i0.wp.com/sweetcrudereports.com/wp-content/uploads/2023/11/Felix-Ogbe-Omatsola.jpg?resize=800%2C445&ssl=1",
+  },
+];
+
 const DonatePage = () => {
+  const { toast } = useToast();
+
+  const handleComingSoon = (platform: string) => {
+    toast({
+      title: "Coming Soon!",
+      description: `${platform} payment integration is coming soon. Please use bank transfer or contact us directly.`,
+    });
+  };
+
   return (
     <Layout>
       <PageHero
@@ -74,6 +123,54 @@ const DonatePage = () => {
               <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
               <span className="text-sm sm:text-base font-semibold">100% of donations go directly to community programs</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Distinguished Supporters Section */}
+      <section className="section-padding bg-muted">
+        <div className="container-custom">
+          <div className="text-center mb-8 sm:mb-12">
+            <Award className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold mb-4">
+              Our Distinguished Supporters
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              We are honored to have the support of these distinguished individuals who believe in our mission 
+              and contribute to our community development efforts.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {supporters.map((supporter, index) => (
+              <div 
+                key={index} 
+                className="bg-card rounded-xl overflow-hidden shadow-sm hover-lift group"
+              >
+                <div className="aspect-[4/3] overflow-hidden bg-muted">
+                  <img 
+                    src={supporter.image} 
+                    alt={supporter.name}
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop";
+                    }}
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-display font-bold text-foreground mb-1">
+                    {supporter.name}
+                  </h3>
+                  <p className="text-sm text-primary font-semibold mb-3">
+                    {supporter.title}
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {supporter.description}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -132,7 +229,10 @@ const DonatePage = () => {
               <p className="text-muted-foreground text-sm mb-6">
                 Fast, secure Nigerian payment gateway. Pay with your debit card or bank transfer.
               </p>
-              <Button className="w-full bg-[#00C3F7] hover:bg-[#00C3F7]/90">
+              <Button 
+                className="w-full bg-[#00C3F7] hover:bg-[#00C3F7]/90"
+                onClick={() => handleComingSoon("Paystack")}
+              >
                 Donate via Paystack
               </Button>
             </div>
@@ -146,7 +246,10 @@ const DonatePage = () => {
               <p className="text-muted-foreground text-sm mb-6">
                 Multiple payment options including cards, bank transfer, and mobile money.
               </p>
-              <Button className="w-full bg-[#F5A623] hover:bg-[#F5A623]/90 text-foreground">
+              <Button 
+                className="w-full bg-[#F5A623] hover:bg-[#F5A623]/90 text-foreground"
+                onClick={() => handleComingSoon("Flutterwave")}
+              >
                 Donate via Flutterwave
               </Button>
             </div>
@@ -160,7 +263,10 @@ const DonatePage = () => {
               <p className="text-muted-foreground text-sm mb-6">
                 International donations accepted. Secure payments with buyer protection.
               </p>
-              <Button className="w-full bg-[#003087] hover:bg-[#003087]/90">
+              <Button 
+                className="w-full bg-[#003087] hover:bg-[#003087]/90"
+                onClick={() => handleComingSoon("PayPal")}
+              >
                 Donate via PayPal
               </Button>
             </div>
@@ -182,7 +288,7 @@ const DonatePage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
             {bankAccounts.map((account) => (
               <div key={account.currency} className="bg-muted rounded-xl p-6 text-center">
                 <span className="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-semibold mb-4">

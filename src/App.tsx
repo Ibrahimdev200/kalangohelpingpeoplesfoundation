@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProgramsPage from "./pages/ProgramsPage";
 import EventsPage from "./pages/EventsPage";
+import SupportersPage from "./pages/SupportersPage";
 import DonatePage from "./pages/DonatePage";
 import VolunteerPage from "./pages/VolunteerPage";
 import ContactPage from "./pages/ContactPage";
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/about" element={<AboutPage />} />
           <Route path="/programs" element={<ProgramsPage />} />
           <Route path="/events" element={<EventsPage />} />
+          <Route path="/supporters" element={<SupportersPage />} />
           <Route path="/donate" element={<DonatePage />} />
           <Route path="/volunteer" element={<VolunteerPage />} />
           <Route path="/contact" element={<ContactPage />} />

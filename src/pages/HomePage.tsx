@@ -180,7 +180,7 @@ const HomePage = () => {
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
-            <Link to="/donate#supporters">
+            <Link to="/supporters">
               <Button size="lg" variant="outline" className="gap-2 w-full sm:w-auto">
                 <Heart className="h-4 w-4" />
                 Meet Our Supporters

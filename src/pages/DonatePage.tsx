@@ -11,6 +11,7 @@ import supporterDouyeDiri from "@/assets/supporter-douye-diri.jpg";
 import supporterAtekeTom from "@/assets/supporter-ateke-tom.jpg";
 import supporterKojoSam from "@/assets/supporter-kojo-sam.jpg";
 import supporterSamuelOgbuku from "@/assets/supporter-samuel-ogbuku.jpg";
+import supporterTompolo from "@/assets/supporter-tompolo.jpg";
 
 const donationUses = [
   "Food packages for families in need",
@@ -62,10 +63,10 @@ const supporters = [
     image: "https://cdn.punchng.com/wp-content/uploads/2024/01/17182159/Nyesom-Wike-1.webp",
   },
   {
-    name: "High Chief Government Ekpemupolo (Tompolo)",
+    name: "High Oweizidei Thomas Ekpemupolo (Tompolo)",
     title: "Chairman, Tantita Security Services",
     description: "A prominent Niger Delta leader and Chief Priest of Egbesu deity. Founder of Tantita Security Services and strong advocate for Niger Delta development and environmental protection.",
-    image: "https://pbs.twimg.com/profile_images/1742861666161565696/LpP15MXq_400x400.jpg",
+    image: supporterTompolo,
   },
   {
     name: "HRM King Ateke Michael Tom",

@@ -173,11 +173,17 @@ const HomePage = () => {
               </div>
             ))}
           </div>
-          <div className="text-center mt-8 sm:mt-10 md:mt-12">
+          <div className="text-center mt-8 sm:mt-10 md:mt-12 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Link to="/programs">
               <Button size="lg" variant="outline" className="gap-2 w-full sm:w-auto">
                 View All Programs
                 <ArrowRight className="h-4 w-4" />
+              </Button>
+            </Link>
+            <Link to="/donate#supporters">
+              <Button size="lg" variant="outline" className="gap-2 w-full sm:w-auto">
+                <Heart className="h-4 w-4" />
+                Meet Our Supporters
               </Button>
             </Link>
           </div>

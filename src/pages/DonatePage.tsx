@@ -140,7 +140,7 @@ const DonatePage = () => {
       </section>
 
       {/* Distinguished Supporters Section */}
-      <section className="section-padding bg-muted">
+      <section id="supporters" className="section-padding bg-muted">
         <div className="container-custom">
           <div className="text-center mb-8 sm:mb-12">
             <Award className="h-12 w-12 text-primary mx-auto mb-4" />

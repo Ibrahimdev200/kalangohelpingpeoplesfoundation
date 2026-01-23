@@ -293,6 +293,20 @@ const EventsPage = () => {
               <video
                 controls
                 className="w-full aspect-video object-cover"
+                poster={program1}
+              >
+                <source src="/videos/foundation-update-2026.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="p-3 sm:p-4">
+                <h3 className="font-display font-bold text-sm sm:text-base">Foundation Update 2026</h3>
+                <p className="text-muted-foreground text-xs sm:text-sm">Latest news and activities from the foundation.</p>
+              </div>
+            </div>
+            <div className="bg-card rounded-xl overflow-hidden shadow-sm">
+              <video
+                controls
+                className="w-full aspect-video object-cover"
                 poster={program5}
               >
                 <source src="/videos/toilet-renovation.mp4" type="video/mp4" />

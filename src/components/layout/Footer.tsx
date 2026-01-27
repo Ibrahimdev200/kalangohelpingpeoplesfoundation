@@ -35,7 +35,7 @@ const Footer = () => {
                 <Facebook className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/kalango_foundation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-background/10 rounded-full hover:bg-primary transition-colors"

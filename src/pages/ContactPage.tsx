@@ -32,7 +32,7 @@ const contactInfo = [
 
 const socialLinks = [
   { icon: Facebook, name: "Facebook", url: "https://facebook.com" },
-  { icon: Instagram, name: "Instagram", url: "https://instagram.com" },
+  { icon: Instagram, name: "Instagram", url: "https://www.instagram.com/kalango_foundation" },
 ];
 
 const ContactPage = () => {

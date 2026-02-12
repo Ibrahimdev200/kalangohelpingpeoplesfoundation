@@ -40,6 +40,7 @@ import gallery32 from "@/assets/gallery-32.jpg";
 import gallery33 from "@/assets/gallery-33.jpg";
 import gallery34 from "@/assets/gallery-34.jpg";
 import wheelchairPoster from "@/assets/wheelchair-donation-poster.jpg";
+import gallery35 from "@/assets/gallery-35.jpg";
 
 const pastEvents = [
   {
@@ -122,6 +123,7 @@ const galleryImages = [
   { src: gallery32, alt: "Traditional drummers performance" },
   { src: gallery33, alt: "Community event wide view" },
   { src: gallery34, alt: "Foundation team seated at event" },
+  { src: gallery35, alt: "Donation to motherless home by Kalango Links Foundation" },
 ];
 
 const EventsPage = () => {

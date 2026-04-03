@@ -26,27 +26,21 @@ const donationUses = [
 const bankAccounts = [
   {
     currency: "Nigerian Naira (NGN)",
-    accountNumber: "0895862663",
-    bankName: "GTB Bank",
-    accountName: "Kalango Links Nigeria Limited",
-  },
-  {
-    currency: "Euro (EUR)",
-    accountNumber: "0895862694",
-    bankName: "GTB Bank",
-    accountName: "Kalango Links Nigeria Limited",
-  },
-  {
-    currency: "Pound Sterling (GBP)",
-    accountNumber: "0895862687",
-    bankName: "GTB Bank",
-    accountName: "Kalango Links Nigeria Limited",
+    accountNumber: "2008211160",
+    bankName: "FCMB",
+    accountName: "Kalango Helping People's Foundation",
   },
   {
     currency: "U.S. Dollar (USD)",
-    accountNumber: "0895862670",
-    bankName: "GTB Bank",
-    accountName: "Kalango Links Nigeria Limited",
+    accountNumber: "2008306594",
+    bankName: "FCMB",
+    accountName: "Kalango Helping People's Foundation",
+  },
+  {
+    currency: "Pound Sterling (GBP)",
+    accountNumber: "2008315336",
+    bankName: "FCMB",
+    accountName: "Kalango Helping People's Foundation",
   },
 ];
 

@@ -41,11 +41,6 @@ const supporters = [
     image: supporterAteke,
   },
   {
-    name: "Chief Dr. Kojo Sam",
-    title: "MD, Kojo Sam Logistics",
-    image: supporterKojoSam,
-  },
-  {
     name: "Dr. Samuel Ogbuku",
     title: "Managing Director, NDDC",
     image: supporterSamuelOgbuku,

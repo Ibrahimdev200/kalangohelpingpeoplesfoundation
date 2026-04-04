@@ -7,7 +7,7 @@ import PageHero from "@/components/shared/PageHero";
 import program5 from "@/assets/program-5.jpg";
 import supporterDouyeDiri from "@/assets/supporter-douye-diri.jpg";
 import supporterAtekeTom from "@/assets/supporter-ateke-tom.jpg";
-import supporterKojoSam from "@/assets/supporter-kojo-sam.png";
+
 import supporterSamuelOgbuku from "@/assets/supporter-samuel-ogbuku.webp";
 import supporterTompolo from "@/assets/supporter-tompolo.png";
 import supporterWike from "@/assets/supporter-wike.jpg";
@@ -37,12 +37,6 @@ const supporters = [
     title: "Amanyanabo of Okochiri Kingdom",
     description: "His Royal Majesty, a first-class traditional ruler and peace advocate from Rivers State, has been instrumental in promoting peace and development in the Niger Delta region.",
     image: supporterAtekeTom,
-  },
-  {
-    name: "Chief Dr. Kojo Sam",
-    title: "MD, Kojo Sam Logistics & Labrador Security Services",
-    description: "A prominent Niger Delta philanthropist from Opu-Nembe, Bayelsa State. Known for his generous community empowerment programs and support for small business owners.",
-    image: supporterKojoSam,
   },
   {
     name: "Dr. Samuel Ogbuku",

@@ -16,7 +16,7 @@ import supporterWike from "@/assets/supporter-wike.jpg";
 import supporterAteke from "@/assets/supporter-ateke-tom.jpg";
 import supporterJohnnie from "@/assets/supporter-johnnie-turner.jpg";
 import supporterDouyeDiri from "@/assets/supporter-douye-diri.jpg";
-import supporterKojoSam from "@/assets/supporter-kojo-sam.png";
+
 import supporterSamuelOgbuku from "@/assets/supporter-samuel-ogbuku.webp";
 
 const supporters = [
@@ -39,11 +39,6 @@ const supporters = [
     name: "HRM King Ateke Michael Tom",
     title: "Amanyanabo of Okochiri Kingdom",
     image: supporterAteke,
-  },
-  {
-    name: "Chief Dr. Kojo Sam",
-    title: "MD, Kojo Sam Logistics",
-    image: supporterKojoSam,
   },
   {
     name: "Dr. Samuel Ogbuku",

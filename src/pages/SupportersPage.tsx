@@ -39,12 +39,6 @@ const supporters = [
     image: supporterAtekeTom,
   },
   {
-    name: "Chief Dr. Kojo Sam",
-    title: "MD, Kojo Sam Logistics & Labrador Security Services",
-    description: "A prominent Niger Delta philanthropist from Opu-Nembe, Bayelsa State. Known for his generous community empowerment programs and support for small business owners.",
-    image: supporterKojoSam,
-  },
-  {
     name: "Dr. Samuel Ogbuku",
     title: "Managing Director, NDDC",
     description: "As the Managing Director of the Niger Delta Development Commission (NDDC), Dr. Ogbuku has championed various development projects benefiting communities in the region.",

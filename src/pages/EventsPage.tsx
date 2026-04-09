@@ -41,6 +41,14 @@ import gallery33 from "@/assets/gallery-33.jpg";
 import gallery34 from "@/assets/gallery-34.jpg";
 import wheelchairPoster from "@/assets/wheelchair-donation-poster.jpg";
 import gallery35 from "@/assets/gallery-35.jpg";
+import medicalOutreachFlyer from "@/assets/medical-outreach-flyer.jpg";
+import medicalOutreach1 from "@/assets/medical-outreach-1.jpg";
+import medicalOutreach2 from "@/assets/medical-outreach-2.jpg";
+import medicalOutreach3 from "@/assets/medical-outreach-3.jpg";
+import medicalOutreach4 from "@/assets/medical-outreach-4.jpg";
+import medicalOutreach5 from "@/assets/medical-outreach-5.jpg";
+import medicalOutreach6 from "@/assets/medical-outreach-6.jpg";
+import medicalOutreach7 from "@/assets/medical-outreach-7.jpg";
 
 const pastEvents = [
   {

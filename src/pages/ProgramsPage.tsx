@@ -7,9 +7,9 @@ import PageHero from "@/components/shared/PageHero";
 import program1 from "@/assets/program-1.jpg";
 import program2 from "@/assets/program-2.jpg";
 import program3 from "@/assets/program-3.jpg";
-import program4 from "@/assets/program-4.jpg";
 import program5 from "@/assets/program-5.jpg";
 import program6 from "@/assets/program-6.jpg";
+import medicalOutreachFlyer from "@/assets/medical-outreach-flyer.jpg";
 
 const programs = [
   {
@@ -43,9 +43,9 @@ const programs = [
   {
     icon: Stethoscope,
     title: "Health & Medical Aid",
-    description: "Access to healthcare shouldn't be a privilege. We organize medical outreach programs, provide health education, and help families access essential medical care and medications.",
+    description: "Access to healthcare shouldn't be a privilege. We organize free medical outreach programs including eye care services, malaria testing and treatment, distribution of medicated eyeglasses, mosquito nets, and free medications. Our April 2026 outreach at Opu-Nembe Town Hall served hundreds of community members.",
     impact: "1,500+ medical consultations",
-    image: program4,
+    image: medicalOutreachFlyer,
   },
   {
     icon: Heart,

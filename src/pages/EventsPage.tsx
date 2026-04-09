@@ -41,8 +41,23 @@ import gallery33 from "@/assets/gallery-33.jpg";
 import gallery34 from "@/assets/gallery-34.jpg";
 import wheelchairPoster from "@/assets/wheelchair-donation-poster.jpg";
 import gallery35 from "@/assets/gallery-35.jpg";
+import medicalOutreachFlyer from "@/assets/medical-outreach-flyer.jpg";
+import medicalOutreach1 from "@/assets/medical-outreach-1.jpg";
+import medicalOutreach2 from "@/assets/medical-outreach-2.jpg";
+import medicalOutreach3 from "@/assets/medical-outreach-3.jpg";
+import medicalOutreach4 from "@/assets/medical-outreach-4.jpg";
+import medicalOutreach5 from "@/assets/medical-outreach-5.jpg";
+import medicalOutreach6 from "@/assets/medical-outreach-6.jpg";
+import medicalOutreach7 from "@/assets/medical-outreach-7.jpg";
 
 const pastEvents = [
+  {
+    title: "Free Medical Outreach 2026",
+    date: "April 6, 2026",
+    location: "Opu-Nembe Town Hall",
+    description: "Free medical outreach providing eye care services, free eye tests, malaria control & testing, distribution of medicated eyeglasses, free malaria drugs, and mosquito nets to the community. Sponsored by Hon. Korite Michael Kalango.",
+    image: medicalOutreachFlyer,
+  },
   {
     title: "Christmas Food Distribution 2024",
     date: "December 2024",
@@ -124,6 +139,13 @@ const galleryImages = [
   { src: gallery33, alt: "Community event wide view" },
   { src: gallery34, alt: "Foundation team seated at event" },
   { src: gallery35, alt: "Donation to motherless home by Kalango Links Foundation" },
+  { src: medicalOutreach1, alt: "Medical outreach - volunteer consultation with community member" },
+  { src: medicalOutreach2, alt: "Medical outreach - malaria testing station" },
+  { src: medicalOutreach3, alt: "Medical outreach - team group photo at venue" },
+  { src: medicalOutreach4, alt: "Medical outreach - volunteers at the event" },
+  { src: medicalOutreach5, alt: "Medical outreach - drug distribution station" },
+  { src: medicalOutreach6, alt: "Medical outreach - community members waiting for services" },
+  { src: medicalOutreach7, alt: "Medical outreach - eyeglass fitting for community member" },
 ];
 
 const EventsPage = () => {

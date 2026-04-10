@@ -256,7 +256,7 @@ const HomePage = () => {
             title="Our Programs"
             subtitle="Discover how we're making a difference in communities across Nigeria through our focused initiatives."
           />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             {programs.map((program, index) => (
               <div
                 key={program.title}

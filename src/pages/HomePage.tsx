@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Heart, Users, ArrowRight, HandHeart, GraduationCap, Utensils, Quote } from "lucide-react";
+import { Heart, Users, ArrowRight, HandHeart, GraduationCap, Utensils, Quote, Palette } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import SectionHeading from "@/components/shared/SectionHeading";
@@ -9,6 +9,7 @@ import program1 from "@/assets/program-1.jpg";
 import program2 from "@/assets/program-2.jpg";
 import program3 from "@/assets/program-3.jpg";
 import program5 from "@/assets/program-5.jpg";
+import programCulture from "@/assets/program-culture.jpg";
 import founderImage from "@/assets/founder-korite.png";
 
 import supporterTompolo from "@/assets/supporter-tompolo.png";
@@ -70,6 +71,12 @@ const programs = [
     title: "Community Outreach",
     description: "Regular outreach programs bringing hope, resources, and support directly to vulnerable communities.",
     image: program5,
+  },
+  {
+    icon: Palette,
+    title: "Culture & Heritage",
+    description: "Preserving and celebrating the rich cultural heritage of Nembe and Ijaw communities through festivals, arts, and traditions.",
+    image: programCulture,
   },
 ];
 

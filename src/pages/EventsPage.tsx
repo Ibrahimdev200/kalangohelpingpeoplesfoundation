@@ -13,6 +13,7 @@ import program5 from "@/assets/program-5.jpg";
 import program6 from "@/assets/program-6.jpg";
 import program7 from "@/assets/program-7.jpg";
 import program8 from "@/assets/program-8.jpg";
+import programHealthOutreach from "@/assets/program-health-outreach.jpg";
 import gallery9 from "@/assets/gallery-9.jpg";
 import gallery10 from "@/assets/gallery-10.jpg";
 import gallery11 from "@/assets/gallery-11.jpg";
@@ -73,11 +74,18 @@ const pastEvents = [
     image: program3,
   },
   {
-    title: "Community Health Outreach",
+    title: "Nembe Cultural Heritage Day",
     date: "August 2024",
     location: "Nembe LGA",
-    description: "Free medical consultations, health screenings, and medication distribution.",
+    description: "A celebration of Nembe and Ijaw cultural heritage featuring traditional dances, music, and community bonding.",
     image: program4,
+  },
+  {
+    title: "Community Health Outreach",
+    date: "July 2024",
+    location: "Nembe LGA",
+    description: "Free medical consultations, health screenings, and medication distribution to community members.",
+    image: programHealthOutreach,
   },
   {
     title: "Women Empowerment Workshop",

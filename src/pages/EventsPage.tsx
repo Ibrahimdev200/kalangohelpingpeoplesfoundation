@@ -63,7 +63,7 @@ const pastEvents = [
     date: "December 2024",
     location: "Nembe Community",
     description: "Annual Christmas outreach providing food packages and gifts to over 500 families.",
-    image: program1,
+    image: program6,
   },
   {
     title: "Back to School Campaign",
@@ -84,7 +84,7 @@ const pastEvents = [
     date: "June 2024",
     location: "Nembe",
     description: "Skills training workshop for women, teaching tailoring and small business management.",
-    image: program6,
+    image: program1,
   },
 ];
 

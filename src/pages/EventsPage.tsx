@@ -15,7 +15,7 @@ import program7 from "@/assets/program-7.jpg";
 import program8 from "@/assets/program-8.jpg";
 import programHealthOutreach from "@/assets/program-health-outreach.jpg";
 import gallery9 from "@/assets/gallery-9.jpg";
-import gallery10 from "@/assets/gallery-10.jpg";
+
 import gallery11 from "@/assets/gallery-11.jpg";
 import gallery12 from "@/assets/gallery-12.jpg";
 import gallery13 from "@/assets/gallery-13.jpg";
@@ -121,7 +121,7 @@ const galleryImages = [
   { src: program7, alt: "Team activities" },
   { src: program8, alt: "Cultural celebration" },
   { src: gallery9, alt: "Christmas party foundation members at Unity Bridge" },
-  { src: gallery10, alt: "Community leaders at event" },
+  
   { src: gallery11, alt: "Supporting elderly community members" },
   { src: gallery12, alt: "Children's community gathering" },
   { src: gallery13, alt: "Foundation volunteers with children" },

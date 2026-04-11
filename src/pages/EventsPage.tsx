@@ -121,7 +121,7 @@ const galleryImages = [
   { src: program7, alt: "Team activities" },
   { src: program8, alt: "Cultural celebration" },
   { src: gallery9, alt: "Christmas party foundation members at Unity Bridge" },
-  { src: gallery10, alt: "Community leaders at event" },
+  
   { src: gallery11, alt: "Supporting elderly community members" },
   { src: gallery12, alt: "Children's community gathering" },
   { src: gallery13, alt: "Foundation volunteers with children" },
